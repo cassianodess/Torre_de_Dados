@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "dice_roller_app")
-set(APPLICATION_ID "com.example.dice_roller_app")
+set(BINARY_NAME "Torre de Dados")
+set(APPLICATION_ID "com.github.cassianodess.Torre_de_Dados")
 
 cmake_policy(SET CMP0063 NEW)
 

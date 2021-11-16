@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dice_roller_app">
    <application
-        android:label="dice_roller_app"
+        android:label="Torre de Dados"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
