@@ -29,7 +29,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   final myController = TextEditingController();
-  int _dice = 1;
+  int _dice = 0;
   int _initiative = 0;
   String dropDownValue = 'D4';
   int data = new DateTime.now().year;
@@ -49,9 +49,9 @@ class _MyHomePageState extends State<MyHomePage> {
         this._initiative =
             Random().nextInt(getDimension(this.dropDownValue) + 1);
       } else {
-        int input = int.parse(this.myController.text);
+        int modifier = int.parse(this.myController.text);
         this._initiative =
-            Random().nextInt(getDimension(this.dropDownValue) + 1 + input);
+            Random().nextInt(getDimension(this.dropDownValue) + 1) + modifier;
       }
     });
   }
